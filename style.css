@@ -167,7 +167,7 @@ nav{
   align-items: center;
   margin: 0 auto;
   margin-right: 12px;
-  margin-top: -18px;
+  margin-top: -12px;
 }
 
 .upper_navbar_right a{
@@ -193,7 +193,8 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
-  padding-top: 12px;
+  padding-top: 15px;
+  padding-bottom: auto;
   width: 45%;
 }
 
