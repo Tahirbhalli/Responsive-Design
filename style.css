@@ -1,0 +1,17 @@
+header{
+    width: 100%;
+    height: 100px;
+}
+header a{
+    text-decoration: none;
+    color: #aaa;
+}
+header nav:first-child{
+    height: 35%;
+    background-color: black;
+    
+}
+header nav:last-child{
+    height: 65%;
+    
+}
