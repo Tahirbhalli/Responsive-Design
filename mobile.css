@@ -1,0 +1,28 @@
+@media screen and (max-width:800px){
+    nav{
+        height: 40px;
+    }
+    .upper_navbar{
+        display: none;
+    }
+    .lower_navbar{
+        display: none;
+    }
+    .mobile-nav{
+        background-color: black;
+        display: flex;
+        height: 40px;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .flex-icon{
+        color: white;
+        margin-right: 9px;
+        margin-top: 9px;
+    }
+    .top-news{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto;
+    }
+}
