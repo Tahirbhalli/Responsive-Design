@@ -15,6 +15,7 @@ a {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  height: 2000px;
 }
 
 nav {
@@ -29,12 +30,13 @@ nav {
   height: 32px;
   background-color: black;
   font-weight: 100;
+  font-size: 1vw;
 }
 
 .upper_navbar_left {
   width: 70%;
   align-items: center;
-  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 7px;
   color: rgb(143, 141, 141);
 }
@@ -55,10 +57,11 @@ nav {
 }
 
 .upper_navbar_right {
-  align-items: center;
- 
+  width: 100%;
+  padding-right: 15px;
   font-weight: 100;
   color: rgb(143, 141, 141);
+  word-spacing: 15px;
 }
 .upper_navbar_right li{
   float: right;
@@ -87,8 +90,9 @@ nav {
   align-items: center;
   padding-left: 20px;
   padding-top: 12px;
-  width: 45%;
+  width: 55%;
   color: rgb(143, 141, 141);
+  font-weight: 500;
 }
 
 .lower_navbar_content li a:hover {
@@ -97,11 +101,19 @@ nav {
 
 .lower_navbar_button {
   float: right;
-  font-size: xx-large;
-  margin-top: -16px;
+  margin-top: -30px;
   background-color: white;
-  padding-right: 5px;
+  height: 48px;
+  width: 50px;
+  border: 0;
+  border-left: 1px solid rgb(228, 226, 226);
 }
+
+.lower_navbar_button i{
+  color: lightgray;
+  transform: scaleX(-1);
+}
+
 .mobile-nav{
   display: none;
 }
@@ -118,46 +130,102 @@ nav {
 
 .top-news{
   display: grid;
-  grid-template-columns: 70% 30%;
-  
-  height: 400px;
+  grid-template-columns: 66% 34%;
+  height: 436px;
 }
 
 .top-news div:first-child{
   background-image: linear-gradient(356deg, rgba(0,0,0,1) 0%, rgba(224,27,27,0.6922969871542367) 37%, rgba(152,72,72,0.6838936258096988) 100%),url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration.png ); 
   margin-right: 5px;
   margin-top: 5px;
+  margin-left: 7px;
+  height: 428px;
 }
 
 .date{
   float: right;
-  color: #dad4d4;
+  color: white;
+  margin-top: 16px;
+  margin-right: 10px;
 }
 
 .tnw-logo{
-  max-width: 300px;
+  max-width: 500px;
   padding-top: 22px;
-  padding-left: 32px;
+  padding-left: 20px;
 }
 
 .content-tnews{
   float: left;
-  margin-top: 147px;
+  margin-top: 70px;
   margin-left: 15px;
   color: white;
 }
+
+.content-tnews h2{
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-family: Avalon,sans-serif;
+  letter-spacing: -3px;
+}
+
 .desc-cont{
   float: left;
+  word-spacing: 2px;
+  font-size: 14px;
+  color: gray;
 }
+
+.desc-cont i{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .last ul{
   height: 100%;
-}
-.last ul li{
-  background-color: yellow;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg") ;
+} 
+
+.upper_main{
+  background-image: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(176,165,165,0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/GQ2-796x417.png") ;
   background-repeat: no-repeat;
   color: white;
-  margin-top: 3px;
-  text-align: center;
-  height: 50%;
+  margin-top: 5px;
+  height: 48%;
+}
+
+.upper_main span{
+  float: left;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.upper_main h2{
+  float: left;
+  margin-left: 15px;
+  font-family: Avalon,sans-serif;
+  line-height: 25px;
+}
+
+
+.lower_main{
+  background-image: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(176,165,165,0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-copy-796x417.jpg");
+  background-repeat: no-repeat;
+  background-size: 460px auto;
+  color: white;
+  margin-top: 8px;
+  height: 48%;
+}
+
+.lower_main span{
+  float: left;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.lower_main h2{
+  float: left;
+  margin-left: 15px;
+  font-family: Avalon,sans-serif;
+  line-height: 25px;
 }
