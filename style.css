@@ -392,6 +392,63 @@ nav {
   color: rgb(173, 169, 169)
 }
 
+.grid-center{
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* footer*/
+footer{
+  height: 300px;
+  width: 100%;
+  background-color: black;
+}
+.upper-footer{
+  padding-top: 4rem;
+  background: #131313;
+  text-align: center;
+  color: white;
+  height: 70%;
+}
+.upper-footer a{
+  background: #333;
+    border-radius: 50%;
+    display: inline;
+    
+    padding: 12px;
+    text-align: center;
+    margin-left: 5px;
+  /*padding-right:10px;
+  font-size: 15px;
+  font-weight: bold;*/
+}
+
+.links{
+  margin-top: 41px;
+  
+}
+
+.links a{
+  background-color: transparent;
+  margin-left: -10px;
+  
+}
+
+.lower-footer{
+  height: 30%;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+
+.lower-footer a img{
+  height: 9px;
+  margin-right: 2px;
+}
+.heart{
+  color: red;
+}
+/*end footer*/
 /*
 .latest_news {
   max-width: 85%;
