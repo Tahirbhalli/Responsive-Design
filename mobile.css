@@ -12,7 +12,7 @@
         background-color: black;
         display: flex;
         height: 40px;
-        justify-content: flex-end;
+        justify-content: flex-end;    
         width: 100%;
     }
     .tnw-logo {
@@ -23,16 +23,13 @@
         margin-right: 9px;
         margin-top: 9px;
     }
-    .top-news{
-        display: grid;
-        width: 100%;
-        grid-template-columns: auto;
-    }
 
     .top-news{
         display: grid;
         grid-template-columns: auto;
         height: auto;
+        width: 100%;
+        overflow: hidden;
         
     }
     .top-news div{
@@ -51,6 +48,7 @@
         height: 50%;
         padding-left: 3px;
         padding-bottom: 10px;
+        
     }
     .latest-news{  
         height: auto;
@@ -61,7 +59,7 @@
         grid-template-columns: auto;
     }
     .grid-center {
-        width: 100%;
+        width: 90%;
         margin-left: 33px;
     }
     .latest_funding{
@@ -72,9 +70,19 @@
     }
     .latest_funding ul li {
         width: 100%;
+        margin-top: 10px;
     }
     .funding_footer {
         width: 100%;
+    }
+    .funding_heading_a{
+        margin-top: unset;
+    }
+    .funding_company{
+        font-size: 2.2vw;
+    }
+    .funding_money{
+        font-size: small;
     }
 
 }
