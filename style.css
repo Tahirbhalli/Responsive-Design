@@ -18,7 +18,7 @@ body {
   height: 2000px;
 }
 
-/*****************************Navigation Bar*****************************/
+/***************************** Navigation Bar *****************************/
 
 nav {
   position: relative;
@@ -42,16 +42,15 @@ nav {
   padding-top: 7px;
   color: rgb(143, 141, 141);
 }
-.upper_navbar_left li{
+
+.upper_navbar_left li {
   float: left;
 }
-.upper_navbar_left li a{
+
+.upper_navbar_left li a {
   display: block;
   padding-right: 10px;
   padding-left: 10px;
-}
-.upper_navbar_left li a:hover {
-  color: white;
 }
 
 .news_color {
@@ -65,16 +64,23 @@ nav {
   color: rgb(143, 141, 141);
   word-spacing: 15px;
 }
-.upper_navbar_right li{
+
+.upper_navbar_right li {
   float: right;
   margin-left: 5px;
 }
-.upper_navbar_right li a{
+
+.upper_navbar_right li a {
   display: block;
   padding-left: 10px;
   padding-right: 5px;
 }
+
 .upper_navbar_right li a:hover {
+  color: white;
+}
+
+.upper_navbar_left li a:hover {
   color: white;
 }
 
@@ -111,228 +117,262 @@ nav {
   border-left: 1px solid rgb(228, 226, 226);
 }
 
-.lower_navbar_button i{
+.lower_navbar_button i {
   color: lightgray;
   transform: scaleX(-1);
 }
 
-.mobile-nav{
+.mobile-nav {
   display: none;
 }
 
-/*****************************Yellow Strip*****************************/
+/***************************** Yellow Strip *****************************/
 
-.strip{
+.strip {
   background-color: yellow;
   color: rgb(0, 0, 0);
   height: fit-content;
   width: 100%;
 }
-.strip span{
+
+.strip span {
   padding-left: 15px;
 }
 
-/*****************************Main News*****************************/
+/***************************** Main News *****************************/
 
-.top-news{
+.top-news {
   display: grid;
   grid-template-columns: 66% 34%;
   height: 436px;
 }
 
-.top-news div:first-child{
-  background: rgb(255,64,64);
-  background-image: linear-gradient(170deg, rgba(255,64,64,0.8113445207184437) 0%, rgba(0,0,0,1) 70%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration.png ); 
+.top-news div:first-child {
+  background: rgb(255, 64, 64);
+  background-image: linear-gradient(170deg, rgba(255, 64, 64, 0.8113445207184437) 0%, rgba(0, 0, 0, 1) 70%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration.png);
+  background-size: cover;
+  background-position: center center;
   margin-right: 5px;
   margin-top: 5px;
   margin-left: 7px;
   height: 428px;
 }
 
-.date{
+.date {
   float: right;
   color: white;
   margin-top: 16px;
   margin-right: 10px;
 }
 
-.tnw-logo{
+.tnw-logo {
   max-width: 500px;
   padding-top: 22px;
   padding-left: 20px;
 }
 
-.content-tnews{
+.content-tnews {
   float: left;
   margin-top: 70px;
   margin-left: 15px;
   color: white;
 }
 
-.content-tnews h2{
+.content-tnews h2 {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 20px;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   letter-spacing: -3px;
 }
 
-.desc-cont{
+.desc-cont {
   float: left;
   word-spacing: 2px;
   font-size: 14px;
   color: gray;
 }
 
-.desc-cont i{
+.desc-cont i {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.last ul{
+.last ul {
   height: 100%;
-} 
+}
 
-.upper_main{
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(176,165,165,0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/GQ2-796x417.png") ;
-  background-repeat: no-repeat;
+.upper_main {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/GQ2-796x417.png");
+  background-size: cover;
+  background-position: center center;
   color: white;
   margin-top: 5px;
   height: 48%;
 }
 
-.upper_main span{
+.upper_main span {
   float: left;
   margin-left: 15px;
   margin-top: 25px;
 }
 
-.upper_main h2{
+.upper_main h2 {
   float: left;
+  margin-top: 10px;
   margin-left: 15px;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   line-height: 25px;
 }
 
-
-.lower_main{
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(176,165,165,0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-copy-796x417.jpg");
+.lower_main {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-copy-796x417.jpg");
   background-repeat: no-repeat;
-  background-size: auto auto;
+  background-size: cover;
+  background-position: center center;
   color: white;
   margin-top: 8px;
   height: 48%;
 }
 
-.lower_main span{
+.lower_main span {
   float: left;
   margin-left: 15px;
   margin-top: 25px;
 }
 
-.lower_main h2{
+.lower_main h2 {
   float: left;
+  margin-top: 10px;
   margin-left: 15px;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   line-height: 25px;
 }
 
-.lower_main .desc-cont{
+.lower_main .desc-cont {
   margin-top: 50px;
 }
 
-/*****************************Latest News*****************************/
+/***************************** Latest News *****************************/
 
-.latest-news{
+.latest-news {
   width: 85%;
   height: 646px;
   margin: 0 auto;
   margin-top: 80px;
 }
 
-.latest-news h1 a{
+.latest-news h1 a {
   margin-top: 40px;
   color: #f42;
-  text-decoration: none;
+  padding-bottom: 40px;
 }
 
-.grid-latestnews{
+.grid-latestnews {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 100%;
   background-color: white;
 }
 
-.grid-latestnews div{
+.grid-latestnews div {
   padding-right: 20px;
   padding-bottom: 30px;
   margin-top: 10px;
 }
 
-.grid-latestnews div img{
+.grid-latestnews div img {
   width: 100%;
 }
 
-/*****************************Latest funding*****************************/
+.grid-latestnews p {
+  color: black;
+  font-family: Avalon, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
 
-.latest_funding{
+.grid-latestnews span {
+  font-size: 12px;
+  color: gray;
+  font-family: Avalon, sans-serif;
+  padding-right: 5px;
+}
+
+.latest_news_hover:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.latest-news h1 a:hover {
+  color: black;
+}
+
+.grid-latestnews p:hover {
+  text-decoration: underline;
+  color: #f42;
+  text-decoration-color: rgb(241, 167, 154);
+}
+
+/***************************** Latest funding *****************************/
+
+.latest_funding {
   width: 85%;
   height: 315px;
   margin: 0 auto;
-  margin-top: 40px;
 }
 
-.funding_heading{
+.funding_heading {
   color: #ff4422;
 }
 
-.funding_heading_a{
- text-align: right;
- margin-top: -30px;
- font-size: 18px;
+.funding_heading_a {
+  text-align: right;
+  margin-top: -30px;
+  font-size: 18px;
 }
 
-.funding_heading h2:hover{
+.funding_heading h2:hover {
   color: black;
 }
 
-.funding_heading_a a:hover{
+.funding_heading_a a:hover {
   color: black;
 }
 
-.latest_funding ul{
+.latest_funding ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
 }
 
-.latest_funding ul li{
+.latest_funding ul li {
   background: #fffaf8;
   width: 23%;
   height: 247px;
 }
 
-.latest_funding ul li h4{
+.latest_funding ul li h4 {
   background: #f42;
   height: 40px;
   color: white;
 }
 
-.funding_company{
+.funding_company {
   display: block;
   padding-top: 10px;
   margin-left: 80px;
   font-size: 1.2vw;
 }
 
-
-.latest_funding ul li h5{
-  background: rgba(255,68,34,.08);
+.latest_funding ul li h5 {
+  background: rgba(255, 68, 34, 0.08);
   height: 60px;
 }
 
-.funding_money{
+.funding_money {
   display: block;
   padding-top: 3px;
   margin-left: 80px;
@@ -340,16 +380,16 @@ nav {
   font-size: 1.2vw;
 }
 
-.funding_name{
+.funding_name {
   display: block;
   margin-top: -20px;
   margin-left: 80px;
   font-weight: lighter;
   text-transform: uppercase;
-  color: rgb(116, 108, 108)
+  color: rgb(116, 108, 108);
 }
 
-.funding_icon{
+.funding_icon {
   position: absolute;
   width: 4%;
   top: 1;
@@ -358,7 +398,7 @@ nav {
   margin-left: 10px;
 }
 
-.funding_business{
+.funding_business {
   width: 200px;
   height: 82px;
   padding-left: 20px;
@@ -368,16 +408,12 @@ nav {
   color: rgb(65, 63, 63);
 }
 
-.funding_business a:hover{
-  color: black;
-}
-
 .funding_business i {
   padding-right: 10px;
   color: black;
 }
 
-.funding_footer{
+.funding_footer {
   width: 265px;
   height: 82px;
   padding-left: 20px;
@@ -388,28 +424,179 @@ nav {
   border-top: 1px solid orange;
 }
 
-.funding_footer_on{
-  color: rgb(173, 169, 169)
+.funding_footer_on {
+  color: rgb(173, 169, 169);
 }
 
-/*
-.latest_news {
-  max-width: 85%;
-  height: 502px;
+.funding_business a:hover {
+  color: black;
+}
+
+/*************************** Categories *********************/
+
+.categories {
+  width: 85%;
+  height: 2147px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
-.latest_news ul{
+.categories_content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.latest_news ul li a{
-  display: block;
-  width: 270px;
-  height: 135px;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Your-checklist-for-seamlessly-taking-over-existing-dev-projects-516x270.png");
-  background-size: auto auto;
+.categories_items {
+  width: 32%;
+  height: 685px;
+}
+
+.categories_title {
+  color: #f42;
+  font-family: Avalon, sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.apps_background {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: 276px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/IGTV-368x276.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.background_image_titles {
+  position: absolute;
+  color: white;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 90%;
+  font-family: Avalon, sans-serif;
+}
+
+.most_popular {
+  color: white;
+  font-weight: 500;
+  padding-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.background_title {
+  color: white;
+  padding-bottom: 5px;
+}
+
+.background_title:hover {
+  text-decoration: underline;
+  text-decoration-color: gray;
+}
+
+.background_author:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.background_footer {
+  color: gray;
+  font-weight: lighter;
+}
+
+.categories_latest {
+  position: relative;
+  width: 100%;
+  height: 96px;
+  background-color: rgba(255, 68, 34, 0.06);
+  margin-top: 2px;
+}
+
+.categories_latest_text {
+  width: 74%;
+  height: 96px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #f42;
+}
+
+.categories_latest_latest {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.categories_latest_title {
+  font-family: Avalon, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.categories_latest_title:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(248, 176, 163);
+  cursor: pointer;
+}
+
+.categories_latest_picture {
+  position: absolute;
+  width: 26%;
+  height: 96px;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/IGTV.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.categories_list {
+  width: 100%;
+  margin: 0 auto;
+  height: 260px;
+}
+
+.categories_list_items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.categories_list_items li::before {
+  content: "\2022";
+  color: #f42;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.categories_list_items li {
+  width: 100%;
+  max-height: 20%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 12px;
+  font-family: Avalon, sans-serif;
+  color: rgb(71, 71, 71);
+}
+
+.categories_list_items li a:hover {
+  color: black;
+}
+
+.list_space {
+  padding-left: 12px;
+}
+
+.last_child {
+  content: "";
+  width: 32%;
 }
