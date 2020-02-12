@@ -1,6 +1,6 @@
 # Building Responsive Design
 
-![screenshot](./screenshot.png)
+![screenshot](./Screenshot from 2020-02-12 19-05-10.png)
 
 The page is a mock up of [this](https://thenextweb.com/) page.  
 
