@@ -134,7 +134,6 @@
 
   .main_content {
     position: absolute;
-    height: 96px;
     left: 0;
     bottom: 0;
     padding: 14px 12px;
@@ -149,9 +148,9 @@
 
   .main_content h2 {
     font-size: 3vw;
-    line-height: 15px;
+    line-height: 25px;
     margin-top: 5px;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
   }
 
   .main_news_description {
