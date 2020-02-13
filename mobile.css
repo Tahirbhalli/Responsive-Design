@@ -8,6 +8,7 @@
   }
 
   /*************************** Mobile Navigation Bar ***************************/
+
   nav {
     position: fixed;
     z-index: 1;
@@ -86,7 +87,7 @@
 
   .main_news {
     width: 100%;
-    height: 301px;
+    height: 729px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -103,7 +104,7 @@
   .main_news_content {
     position: relative;
     width: 100%;
-    height: 97px;
+    height: 243px;
     margin-top: 10px;
   }
 
@@ -112,6 +113,7 @@
     background-size: cover;
     background-position: center center;
     cursor: pointer;
+    position: relative;
   }
 
   .second_main {
@@ -119,6 +121,7 @@
     background-size: cover;
     background-position: center center;
     cursor: pointer;
+    position: relative;
   }
 
   .third_main {
@@ -126,6 +129,7 @@
     background-size: cover;
     background-position: center center;
     cursor: pointer;
+    position: relative;
   }
 
   .main_content {
@@ -330,6 +334,10 @@
     color: rgb(173, 169, 169);
   }
 
+  .latest_funding_content:last-child {
+    display: none;
+  }
+
   /*************************** Latest Funding Block ***************************/
 
   .categories {
@@ -509,6 +517,12 @@
     padding-bottom: 80px;
   }
 
+  .float_right {
+    float: right;
+    color: #f42;
+    margin-top: -30px
+  }
+
   .grid_latest_deals {
     position: relative;
     display: flex;
@@ -583,6 +597,7 @@
     margin: 0 auto;
     margin-top: 50px;
     word-spacing: 10px;
+    color: gray;
   }
 
   .links_link {
@@ -591,7 +606,7 @@
   }
 
   .lower-footer {
-    width: 28%;
+    width: 60%;
     color: white;
     font-size: 13px;
     text-align: center;

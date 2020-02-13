@@ -567,6 +567,13 @@ body {
     padding-bottom: 80px;
   }
 
+  .float_right {
+    float: right;
+    color: #f42;
+    margin-top: -30px;
+    margin-right: 20px;
+  }
+
   .grid_latest_deals {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -632,9 +639,10 @@ body {
   .links {
     cursor: pointer;
     width: 40%;
-    word-spacing: 10px;
+    word-spacing: 20px;
     margin: 0 auto;
     margin-top: 41px;
+    color: gray;
   }
 
   .links_link {
@@ -647,6 +655,7 @@ body {
     color: white;
     font-size: 13px;
     text-align: center;
+    padding-top: 30px;
   }
 
   .lower-footer a img {

@@ -139,17 +139,18 @@
   .top-news {
     display: grid;
     grid-template-columns: 66% 34%;
-    height: 246px;
+    height: 532px;
+    margin: 0 auto;
+    width: 99%;
   }
 
-  .top-news div:first-child {
+  .top-news .main_image_background:first-child {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration.png");
     background-size: cover;
     background-position: center center;
     margin-right: 5px;
     margin-top: 5px;
-    margin-left: 7px;
-    height: 246px;
+    height: 100%;
     position: relative;
     cursor: pointer;
   }
@@ -201,22 +202,22 @@
     background-position: center center;
     color: white;
     margin-top: 5px;
-    height: 47%;
+    height: 49%;
     cursor: pointer;
+    position: relative;
   }
 
   .upper_main span {
-    float: left;
     margin-left: 15px;
-    font-size: 12px;
+    padding-bottom: 15px;
   }
 
   .upper_main h2 {
-    float: left;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 15px;
     font-family: Avalon, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .lower_main {
@@ -225,19 +226,26 @@
     background-size: cover;
     background-position: center center;
     color: white;
-    margin-top: 8px;
-    height: 47%;
+    margin-top: 10px;
+    height: 49%;
     cursor: pointer;
+    position: relative;
+  }
+
+  .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 
   .lower_main span {
-    float: left;
     margin-left: 15px;
+    padding-bottom: 15px;
   }
 
   .lower_main h2 {
-    float: left;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 15px;
     font-family: Avalon, sans-serif;
     font-size: 14px;
@@ -565,6 +573,13 @@
     padding-bottom: 80px;
   }
 
+  .float_right {
+    float: right;
+    color: #f42;
+    margin-top: -30px;
+    margin-right: 20px;
+  }
+
   .grid_latest_deals {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -633,6 +648,7 @@
     margin-top: 40px;
     word-spacing: 15px;
     font-weight: 400;
+    color: gray;
   }
 
   .links_link {
