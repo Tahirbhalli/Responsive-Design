@@ -390,7 +390,7 @@
     font-family: Avalon, sans-serif;
   }
 
-  .deal span{
+  .deal span {
     color: red;
     float: right;
     margin-top: -30px;
@@ -525,7 +525,7 @@
   .float_right {
     float: right;
     color: #f42;
-    margin-top: -30px
+    margin-top: -30px;
   }
 
   .grid_latest_deals {
