@@ -647,13 +647,12 @@ body {
 
   .links_link {
     background-color: transparent;
-    margin-left: -10px;
   }
 
   .lower-footer {
     height: 30%;
     color: white;
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
     padding-top: 30px;
   }
