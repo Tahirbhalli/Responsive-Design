@@ -17,7 +17,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1034px) {
   .mobile {
     display: none;
   }
