@@ -1,28 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-@media only screen and (min-width: 1024px) {
-  .mobile {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .desktop {
     display: none;
   }
 
-  .tablet {
+  .mobile {
     display: none;
   }
 
@@ -40,7 +21,7 @@ body {
     height: 32px;
     background-color: black;
     font-weight: 100;
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
 
   .upper_navbar_left {
@@ -49,6 +30,7 @@ body {
     padding-left: 10px;
     padding-top: 7px;
     color: rgb(143, 141, 141);
+    margin-left: 100px;
   }
 
   .upper_navbar_left li {
@@ -89,19 +71,20 @@ body {
     width: 100%;
     text-transform: uppercase;
     height: 48px;
-    background-color: white;
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
 
   .lower_navbar_content {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
-    padding-top: 12px;
+    padding-top: 15px;
     width: 55%;
     color: rgb(143, 141, 141);
     font-weight: 500;
+    margin-left: 100px;
   }
 
   .lower_navbar_button {
@@ -120,7 +103,25 @@ body {
     transform: scaleX(-1);
   }
 
-  /***************************** Yellow Strip *****************************/
+  .tablet_nav_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 106px;
+    height: 80px;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    cursor: pointer;
+  }
+
+  .tablet_icon {
+    position: absolute;
+    width: 66px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    margin-left: 18px;
+    margin-top: 30px;
+  }
 
   .strip {
     background-color: yellow;
@@ -130,7 +131,7 @@ body {
   }
 
   .strip span {
-    padding-left: 15px;
+    margin-left: 120px;
   }
 
   /***************************** Main News *****************************/
@@ -138,47 +139,44 @@ body {
   .top-news {
     display: grid;
     grid-template-columns: 66% 34%;
-    height: 436px;
+    height: 246px;
   }
 
   .top-news div:first-child {
-    background: rgb(255, 64, 64);
-    background-image: linear-gradient(170deg, rgba(255, 64, 64, 0.8113445207184437) 0%, rgba(0, 0, 0, 1) 70%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration.png");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration.png");
     background-size: cover;
     background-position: center center;
     margin-right: 5px;
     margin-top: 5px;
     margin-left: 7px;
-    height: 428px;
+    height: 246px;
+    position: relative;
     cursor: pointer;
   }
 
   .date {
-    float: right;
-    color: white;
-    margin-top: 16px;
-    margin-right: 10px;
+    display: none;
   }
 
   .tnw-logo {
-    max-width: 500px;
-    padding-top: 22px;
-    padding-left: 20px;
+    display: none;
   }
 
   .content-tnews {
-    float: left;
-    margin-top: 70px;
+    position: absolute;
     margin-left: 15px;
+    margin-bottom: 15px;
     color: white;
+    bottom: 0;
+    left: 0;
   }
 
   .content-tnews h2 {
-    font-size: 48px;
+    font-size: 30px;
     line-height: 1;
     margin-bottom: 20px;
     font-family: Avalon, sans-serif;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
   }
 
   .desc-cont {
@@ -203,14 +201,14 @@ body {
     background-position: center center;
     color: white;
     margin-top: 5px;
-    height: 48%;
+    height: 47%;
     cursor: pointer;
   }
 
   .upper_main span {
     float: left;
     margin-left: 15px;
-    margin-top: 25px;
+    font-size: 12px;
   }
 
   .upper_main h2 {
@@ -218,7 +216,7 @@ body {
     margin-top: 10px;
     margin-left: 15px;
     font-family: Avalon, sans-serif;
-    line-height: 25px;
+    font-size: 16px;
   }
 
   .lower_main {
@@ -228,14 +226,13 @@ body {
     background-position: center center;
     color: white;
     margin-top: 8px;
-    height: 48%;
+    height: 47%;
     cursor: pointer;
   }
 
   .lower_main span {
     float: left;
     margin-left: 15px;
-    margin-top: 25px;
   }
 
   .lower_main h2 {
@@ -243,17 +240,17 @@ body {
     margin-top: 10px;
     margin-left: 15px;
     font-family: Avalon, sans-serif;
-    line-height: 25px;
+    font-size: 14px;
   }
 
   .lower_main .desc-cont {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   /***************************** Latest News *****************************/
 
   .latest-news {
-    width: 85%;
+    width: 95%;
     height: 646px;
     margin: 0 auto;
     margin-top: 80px;
@@ -267,18 +264,18 @@ body {
 
   .grid-latestnews {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     width: 100%;
     background-color: white;
   }
 
-  .grind_latestnews_content {
+  .grid_latest_content {
     padding-right: 20px;
     padding-bottom: 30px;
     margin-top: 10px;
   }
 
-  .grind_latestnews_content img {
+  .grid_latest_content img {
     width: 100%;
   }
 
@@ -300,9 +297,10 @@ body {
   /***************************** Latest funding *****************************/
 
   .latest_funding {
-    width: 85%;
+    width: 95%;
     height: 315px;
     margin: 0 auto;
+    margin-top: 170px;
   }
 
   .funding_heading {
@@ -310,9 +308,9 @@ body {
   }
 
   .funding_heading_a {
-    text-align: right;
-    margin-top: -30px;
+    text-align: left;
     font-size: 18px;
+    margin-top: 10px;
   }
 
   .latest_funding ul {
@@ -322,13 +320,13 @@ body {
     margin-top: 30px;
   }
 
-  .latest_funding ul li {
+  .latest_funding_content {
     background: #fffaf8;
-    width: 23%;
+    width: 32%;
     height: 247px;
   }
 
-  .latest_funding ul li h4 {
+  .latest_funding_content h4 {
     background: #f42;
     height: 40px;
     color: white;
@@ -338,20 +336,20 @@ body {
     display: block;
     padding-top: 10px;
     margin-left: 80px;
-    font-size: 1.2vw;
+    font-size: 1.8vw;
   }
 
-  .latest_funding ul li h5 {
+  .latest_funding_content h5 {
     background: rgba(255, 68, 34, 0.08);
     height: 60px;
   }
 
   .funding_money {
     display: block;
-    padding-top: 3px;
+    padding-top: 7px;
     margin-left: 80px;
     font-weight: 900;
-    font-size: 1.2vw;
+    font-size: 1.8vw;
   }
 
   .funding_name {
@@ -365,7 +363,7 @@ body {
 
   .funding_icon {
     position: absolute;
-    width: 4%;
+    width: 6%;
     top: 1;
     left: 1;
     margin-top: -255px;
@@ -388,7 +386,7 @@ body {
   }
 
   .funding_footer {
-    width: 265px;
+    width: 100%;
     height: 82px;
     padding-left: 20px;
     padding-top: 5px;
@@ -402,10 +400,14 @@ body {
     color: rgb(173, 169, 169);
   }
 
+  .latest_funding_content:last-child {
+    display: none;
+  }
+
   /*************************** Categories *********************/
 
   .categories {
-    width: 85%;
+    width: 95%;
     height: 2147px;
     margin: 0 auto;
     margin-top: 50px;
@@ -419,7 +421,7 @@ body {
   }
 
   .categories_items {
-    width: 32%;
+    width: 49%;
     height: 685px;
   }
 
@@ -525,7 +527,7 @@ body {
     list-style: none;
   }
 
-  .categories_list_items li::before {
+  .categories_item::before {
     content: "\2022";
     color: #f42;
     font-weight: bold;
@@ -548,17 +550,13 @@ body {
     padding-left: 12px;
   }
 
-  .last_child {
-    content: "";
-    width: 32%;
-  }
-
   /****************** Deals **********************/
 
   .latest_deals {
-    width: 85%;
+    width: 95%;
     height: 646px;
     margin: 0 auto;
+    margin-top: 600px;
   }
 
   .latest_deals h1 a {
@@ -569,18 +567,18 @@ body {
 
   .grid_latest_deals {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     width: 100%;
     background-color: white;
   }
 
-  .grid_latest_content {
+  .grid_latest_deals_content {
     padding-right: 20px;
     padding-bottom: 30px;
     margin-top: 10px;
   }
 
-  .grid_latest_content img {
+  .grid_latest_deals_content img {
     width: 100%;
   }
 
@@ -609,7 +607,7 @@ body {
     height: 300px;
     width: 100%;
     background-color: black;
-    margin-top: 40px;
+    margin-top: 400px;
   }
 
   .upper-footer {
@@ -630,11 +628,11 @@ body {
   }
 
   .links {
-    cursor: pointer;
     width: 40%;
-    word-spacing: 10px;
     margin: 0 auto;
-    margin-top: 41px;
+    margin-top: 40px;
+    word-spacing: 15px;
+    font-weight: 400;
   }
 
   .links_link {
@@ -647,6 +645,7 @@ body {
     color: white;
     font-size: 13px;
     text-align: center;
+    padding-top: 30px;
   }
 
   .lower-footer a img {
@@ -658,9 +657,17 @@ body {
     color: red;
   }
 
-  /****************** Hovers **********************/
+  /******************** Hover **********************************/
+
+  .funding_heading h2:hover {
+    color: black;
+  }
 
   .funding_heading_a a:hover {
+    color: black;
+  }
+
+  .categories_item a:hover {
     color: black;
   }
 
@@ -676,43 +683,13 @@ body {
     color: white;
   }
 
+  .lower_navbar_content li a:hover {
+    color: black;
+  }
+
   .latest_news_hover:hover {
     color: black;
     cursor: pointer;
-  }
-
-  .latest_deals h1 a:hover {
-    color: black;
-  }
-
-  .grid_latest_deals p:hover {
-    text-decoration: underline;
-    color: #f42;
-    text-decoration-color: rgb(241, 167, 154);
-  }
-
-  .categories_latest_title:hover {
-    text-decoration: underline;
-    text-decoration-color: rgb(248, 176, 163);
-    cursor: pointer;
-  }
-
-  .background_title:hover {
-    text-decoration: underline;
-    text-decoration-color: gray;
-  }
-
-  .background_author:hover {
-    cursor: pointer;
-    color: white;
-  }
-
-  .funding_heading h2:hover {
-    color: black;
-  }
-
-  .lower_navbar_content li a:hover {
-    color: black;
   }
 
   .latest-news h1 a:hover {
@@ -725,8 +702,31 @@ body {
     text-decoration-color: rgb(241, 167, 154);
   }
 
-  .categories_list_items li a:hover {
+  .background_title:hover {
+    text-decoration: underline;
+    text-decoration-color: gray;
+  }
+
+  .background_author:hover {
+    cursor: pointer;
+    color: white;
+  }
+
+  .grid_latest_deals p:hover {
+    text-decoration: underline;
+    color: #f42;
+    text-decoration-color: rgb(241, 167, 154);
+    cursor: pointer;
+  }
+
+  .latest_deals h1 a:hover {
     color: black;
+  }
+
+  .categories_latest_title:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 176, 163);
+    cursor: pointer;
   }
 
   .categories_title:hover {
@@ -734,5 +734,5 @@ body {
     cursor: pointer;
   }
 
-  /****************** End of desktop size **********************/
+  /****************** End of tablet size **********************/
 }

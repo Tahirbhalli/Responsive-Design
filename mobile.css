@@ -1,28 +1,652 @@
-@media screen and (max-width:800px){
-    nav{
-        height: 40px;
-    }
-    .upper_navbar{
-        display: none;
-    }
-    .lower_navbar{
-        display: none;
-    }
-    .mobile-nav{
-        background-color: black;
-        display: flex;
-        height: 40px;
-        justify-content: flex-end;
-        width: 100%;
-    }
-    .flex-icon{
-        color: white;
-        margin-right: 9px;
-        margin-top: 9px;
-    }
-    .top-news{
-        display: grid;
-        width: 100%;
-        grid-template-columns: auto;
-    }
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  /*************************** Mobile Navigation Bar ***************************/
+  nav {
+    position: fixed;
+    z-index: 1;
+  }
+
+  .mobile nav {
+    width: 100%;
+    height: 48px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .mobile_nav_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 106px;
+    height: 48px;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    cursor: pointer;
+  }
+
+  .mobile_icon {
+    position: absolute;
+    width: 66px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    margin-left: 18px;
+    margin-top: 16px;
+  }
+
+  .nav_right_icons {
+    float: right;
+  }
+
+  .nav_right_icons li {
+    float: left;
+  }
+
+  .nav_right_icons li a {
+    height: 48px;
+    width: 48px;
+    padding: 16px;
+  }
+
+  .nav_right_icons li:first-child {
+    color: lightgray;
+    transform: scaleX(-1);
+    border-left: 1px solid rgb(216, 211, 211);
+    border-right: 1px solid rgb(216, 211, 211);
+  }
+
+  .nav_right_icons li:last-child {
+    color: #f42;
+  }
+
+  .strip {
+    width: 100%;
+    height: 30px;
+    background-color: yellow;
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  .strip span {
+    padding-top: 5px;
+    font-size: 2.5vw;
+    display: block;
+  }
+
+  /*************************** Mains News Block ***************************/
+
+  .main_news {
+    width: 100%;
+    height: 301px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 70px;
+  }
+
+  .main_news ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .main_news_content {
+    position: relative;
+    width: 100%;
+    height: 97px;
+    margin-top: 10px;
+  }
+
+  .first_main {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration.png");
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  .second_main {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/GQ2-796x417.png");
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  .third_main {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-copy-796x417.jpg");
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  .main_content {
+    position: absolute;
+    height: 96px;
+    left: 0;
+    bottom: 0;
+    padding: 14px 12px;
+    font-family: Avalon, sans-serif;
+    color: white;
+  }
+
+  .main_content span {
+    font-family: Shentox, sans-serif;
+    font-weight: 500;
+  }
+
+  .main_content h2 {
+    font-size: 3vw;
+    line-height: 15px;
+    margin-top: 5px;
+    padding-bottom: 2px;
+  }
+
+  .main_news_description {
+    font-size: 11px;
+    word-spacing: 3px;
+    color: gray;
+  }
+
+  /*************************** Latest News Block ***************************/
+
+  .latest_news {
+    height: 856px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  .latestnews_content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .latest_news_items {
+    height: 72px;
+    width: 100%;
+  }
+
+  .latest_news_items a img {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    padding-bottom: 15px;
+  }
+
+  .latest_news_text {
+    padding-left: 92px;
+    line-height: 20px;
+  }
+
+  .latest_news_text p {
+    font-size: 12px;
+    font-weight: 900;
+    font-family: Avalon, sans-serif;
+  }
+
+  .latest_news_text span {
+    font-size: 12px;
+    color: rgb(151, 148, 148);
+  }
+
+  .latest_news h1 {
+    color: #f42;
+    font-size: 20px;
+    font-family: Avalon, sans-serif;
+    letter-spacing: -1px;
+  }
+
+  /*************************** Latest Funding Block ***************************/
+
+  .latest_funding {
+    width: 95%;
+    height: 879px;
+    margin: 0 auto;
+    margin-top: -200px;
+  }
+
+  .heading_list {
+    width: 100%;
+    height: 200px;
+  }
+
+  .heading_list li h2 {
+    color: #f42;
+    font-size: 20px;
+    font-family: Avalon, sans-serif;
+    letter-spacing: -1px;
+    padding-bottom: 10px;
+  }
+
+  .heading_list li a {
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #f42;
+  }
+
+  .latest_funding_blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: -50px;
+  }
+
+  .latest_fuding_items {
+    background: #fffaf8;
+    width: 100%;
+    height: 247px;
+    margin-top: 10px;
+  }
+
+  .latest_fuding_items h4 {
+    background: #f42;
+    height: 40px;
+    color: white;
+  }
+
+  .funding_company {
+    display: block;
+    padding-top: 10px;
+    margin-left: 80px;
+    font-size: 2.2vw;
+  }
+
+  .latest_fuding_items h5 {
+    background: rgba(255, 68, 34, 0.08);
+    height: 60px;
+  }
+
+  .funding_money {
+    display: block;
+    padding-top: 12px;
+    margin-left: 80px;
+    font-weight: 900;
+    font-size: 2.2vw;
+  }
+
+  .funding_name {
+    display: block;
+    margin-top: -20px;
+    margin-left: 80px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: rgb(116, 108, 108);
+  }
+
+  .funding_icon {
+    position: absolute;
+    width: 8%;
+    top: 1;
+    left: 1;
+    margin-top: -255px;
+    margin-left: 10px;
+  }
+
+  .funding_business {
+    width: 200px;
+    height: 82px;
+    padding-left: 20px;
+    padding-top: 15px;
+    line-height: 30px;
+    font-size: 14px;
+    color: rgb(65, 63, 63);
+  }
+
+  .funding_business i {
+    padding-right: 10px;
+    color: black;
+  }
+
+  .funding_footer {
+    width: 100%;
+    height: 82px;
+    padding-left: 20px;
+    padding-top: 5px;
+    line-height: 20px;
+    font-size: 12px;
+    color: rgb(65, 63, 63);
+    border-top: 1px solid orange;
+  }
+
+  .funding_footer_on {
+    color: rgb(173, 169, 169);
+  }
+
+  /*************************** Latest Funding Block ***************************/
+
+  .categories {
+    width: 95%;
+    height: 6796px;
+    margin: 0 auto;
+    margin-top: 380px;
+  }
+
+  .categories_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .categories_items {
+    width: 100%;
+    height: 870px;
+  }
+
+  .categories_title {
+    color: #f42;
+    font-family: Avalon, sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .apps_background {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 528px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 16%, rgba(176, 165, 165, 0.30714284004617476) 55%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/IGTV-368x276.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  .background_image_titles {
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 90%;
+    font-family: Avalon, sans-serif;
+  }
+
+  .most_popular {
+    color: white;
+    font-weight: 500;
+    padding-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: -1px;
+  }
+
+  .background_title {
+    color: white;
+    padding-bottom: 5px;
+  }
+
+  .background_title:hover {
+    text-decoration: underline;
+    text-decoration-color: gray;
+  }
+
+  .background_author:hover {
+    cursor: pointer;
+    color: white;
+  }
+
+  .background_footer {
+    color: gray;
+    font-weight: lighter;
+  }
+
+  .categories_latest {
+    position: relative;
+    width: 100%;
+    height: 96px;
+    background-color: rgba(255, 68, 34, 0.06);
+    margin-top: 2px;
+  }
+
+  .categories_latest_text {
+    width: 74%;
+    height: 96px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #f42;
+  }
+
+  .categories_latest_latest {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .categories_latest_title {
+    font-family: Avalon, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .categories_latest_title:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 176, 163);
+    cursor: pointer;
+  }
+
+  .categories_latest_picture {
+    position: absolute;
+    width: 13%;
+    height: 96px;
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/IGTV.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
+  .categories_list {
+    width: 100%;
+    margin: 0 auto;
+    height: 260px;
+  }
+
+  .categories_list_items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .categories_item::before {
+    content: "\2022";
+    color: #f42;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+  }
+
+  .categories_item {
+    width: 100%;
+    max-height: 20%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: Avalon, sans-serif;
+    color: rgb(71, 71, 71);
+  }
+
+  .list_space {
+    padding-left: 12px;
+  }
+
+  /******************************* Deals *********************/
+
+  .latest_deals {
+    width: 95%;
+    height: 752px;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+
+  .latest_deals h1 a {
+    margin-top: 40px;
+    color: #f42;
+    padding-bottom: 80px;
+  }
+
+  .grid_latest_deals {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .grid_latest_block {
+    height: 72px;
+    width: 100%;
+  }
+
+  .grid_latest_block a img {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    padding-bottom: 15px;
+  }
+
+  .grid_latest_deals_text {
+    padding-left: 92px;
+    line-height: 20px;
+  }
+
+  .grid_latest_deals_text p {
+    font-size: 12px;
+    font-weight: 900;
+    font-family: Avalon, sans-serif;
+  }
+
+  .grid_latest_deals_text span {
+    position: relative;
+    font-size: 12px;
+    color: rgb(151, 148, 148);
+  }
+
+  .cutoff {
+    text-decoration: line-through;
+  }
+
+  /***************************************** Footer ***************************/
+
+  footer {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+  }
+
+  .upper-footer {
+    padding-top: 4rem;
+    background: #131313;
+    text-align: center;
+    color: white;
+    height: 70%;
+  }
+
+  .upper_footer_item {
+    background: #333;
+    border-radius: 50%;
+    display: inline;
+    padding: 12px;
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  .links {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    word-spacing: 10px;
+  }
+
+  .links_link {
+    background-color: transparent;
+    margin-left: -10px;
+  }
+
+  .lower-footer {
+    width: 28%;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .lower-footer a img {
+    height: 9px;
+    margin-right: 2px;
+  }
+
+  .heart {
+    color: red;
+  }
+
+  /******************* Hover ***********************************/
+
+  .heading_list a:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .funding_business a:hover {
+    color: black;
+  }
+
+  .funding .categories_item a:hover {
+    color: black;
+  }
+
+  .categories_title:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .latest_news_hover:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .latest_news_text p:hover {
+    text-decoration: underline;
+    color: #f42;
+    text-decoration-color: rgb(241, 167, 154);
+    cursor: pointer;
+  }
+
+  .latest_news h1:hover {
+    color: black;
+  }
+
+  .heading_list h2:hover {
+    color: black;
+  }
+
+  /****************** End of mobile size **********************/
 }

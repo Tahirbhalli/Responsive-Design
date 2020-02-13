@@ -1,47 +1,41 @@
-YouTube Replica Landing Page
+# Building Responsive Design
 
-The project is demo of https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0
-this website. 
+![screenshot](./screenshot.png)
 
-screenshot
+The page is a mock up of [this](https://thenextweb.com/) page.  
+
+## Built With
+
+- Html
+- CSS
+
+## Live Demo
+
+[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/Responsive-Design/4399caa994bc773cacdf86f71f59a28de2df19d7/index.html)
 
 
+## Authors
 
-Additional description about the project and its features.
+👤 **Author1**
 
-Built With
-HTML,
-CSS,
-Grid
+- Github: [@davisdambis](https://github.com/davisdambis)
 
-Getting Started
 
-To get a local copy up and running follow these simple example steps.
+👤 **Author2**
 
-Setup
-Install
-Usage
-Deployment
+- Github: [@tahirbhalli](https://github.com/tahirbhalli/)
 
-Authors
+## 🤝 Contributing
 
-👤 Author1
-Github: https://github.com/Tahirbhalli
+Contributions, issues and feature requests are welcome! Start by:
+* Forking the project
+* Cloning the project to your local machine
+* `cd` into the Youtube-Replica project directory
+* Run `git checkout -b your-branch-name`
+* Make your contributions
+* Push your branch up to your forked repository
+* Open a Pull Request with a detailed description to the development branch of the original project for a review
 
-👤 Author2
-Github: https://github.com/adamclasic
+## 📝 License
 
-🤝 Contributing
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the issues page.
-
-Show your support
-Give a ⭐️ if you like this project!
-
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
-📝 License
-This project is MIT licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
