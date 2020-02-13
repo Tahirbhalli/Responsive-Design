@@ -336,7 +336,7 @@
     width: 95%;
     height: 6796px;
     margin: 0 auto;
-    margin-top: 380px;
+    margin-top: 50px;
   }
 
   .categories_content {
@@ -381,6 +381,12 @@
     margin-left: 10px;
     width: 90%;
     font-family: Avalon, sans-serif;
+  }
+
+  .deal span{
+    color: red;
+    float: right;
+    margin-top: -30px;
   }
 
   .most_popular {
@@ -579,7 +585,7 @@
   }
 
   .links {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
     word-spacing: 10px;
@@ -591,9 +597,9 @@
   }
 
   .lower-footer {
-    width: 28%;
+    width: 78%;
     color: white;
-    font-size: 13px;
+    font-size: 9px;
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
