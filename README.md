@@ -11,7 +11,7 @@ The page is a mock up of [this](https://thenextweb.com/) page.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/Responsive-Design/571f254b514e40f6ecb52c60fd690d5f8c8799e8/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/Responsive-Design/95843327ca3ac0994fba6bf7dfa492dc0ba4e421/index.html)
 
 
 ## Authors
