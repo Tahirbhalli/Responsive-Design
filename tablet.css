@@ -643,12 +643,13 @@
   }
 
   .links {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 40px;
     word-spacing: 15px;
     font-weight: 400;
     color: gray;
+    text-transform: uppercase;
   }
 
   .links_link {
